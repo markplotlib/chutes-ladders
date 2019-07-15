@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Chutes {
 
 	// constants of the game's board
@@ -7,6 +9,7 @@ public class Chutes {
 
 	public static void main(String[] args) {
 		// variable declaration
+		Random rand = new Random();
 
 		// String variables
 		String welcome = "Welcome to Chutes & Ladders!  ...  ";
@@ -16,7 +19,7 @@ public class Chutes {
 		// With numPlayers assigned by user, array lengths can be fixed.
 		String[] playerNames = {"Abe", "Bob"};  // names of players
 
-		int[] playerPositions = new int[numPlayers];	// positions of players
+		int[] playerPositions = {95, 95};	// positions of players
 
 		// declarations of inner-loop variables
 		int playerNum = 0;
@@ -27,7 +30,7 @@ public class Chutes {
 			System.out.printf("Player %d.\n", playerNum+1);
          System.out.printf("%s, it's your turn. You are currently at space %d.\n", playerNames[playerNum], playerPositions[playerNum]);
 
-         spinner = 50;
+         spinner = rand.nextInt(6) + 1;
          System.out.printf("The spin was: %d\n", spinner);
 			if (playerPositions[playerNum] + spinner > 100) {
 			   System.out.printf("Sorry, no player can go over 100.\n\n");
