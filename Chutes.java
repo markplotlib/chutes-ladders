@@ -24,7 +24,6 @@ public class Chutes {
 
 		while (playerPositions[playerNum] != 100)
 		{
-			System.out.printf("Player %d.\n", playerNum+1);
          System.out.printf("%s, it's your turn. You are currently at space %d.\n", playerNames[playerNum], playerPositions[playerNum]);
 
          spinner = 50;
