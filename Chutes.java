@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Dev {
+public class Chutes {
 
 	// constants of the game's board
 	public final int NUM_SQUARES = 100;
