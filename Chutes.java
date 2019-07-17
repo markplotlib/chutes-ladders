@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Dev {
 
 	// constants of the game's board
